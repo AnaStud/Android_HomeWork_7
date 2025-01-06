@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/StartFragment">
+
+    <fragment
+        android:id="@+id/StartFragment"
+        android:name="com.example.quiz.StartFragment"
+        android:label="@string/empty"
+        tools:layout="@layout/fragment_start">
+
+        <action
+            android:id="@+id/action_StartFragment_to_QuestionsFragment"
+            app:destination="@id/QuestionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/QuestionsFragment"
+        android:name="com.example.quiz.QuestionsFragment"
+        android:label="@string/empty"
+        tools:layout="@layout/fragment_questions">
+
+        <action
+            android:id="@+id/action_QuestionsFragment_to_StartFragment"
+            app:destination="@id/StartFragment" />
+        <action
+            android:id="@+id/action_QuestionsFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/StartFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.quiz.ResultFragment"
+        android:label="@string/empty"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_QuestionsFragment"
+            app:destination="@id/QuestionsFragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/StartFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="testResult"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

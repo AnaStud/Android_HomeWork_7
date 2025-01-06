@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">FILM QUIZ</string>
-    <string name="button_text">Продолжить</string>
+    <string name="button_text">Начать</string>
     <string name="image_description">welcome</string>
+    <string name="welcome">Добро пожаловать в FILM QUIZ!</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="empty">" "</string>
+    <string name="back">Назад</string>
+    <string name="finish">Отправить</string>
+
+    <string name="question1">Какой фильм стал культовым и известен своей фразой: \"Куй железо, не отходя от кассы!\"?</string>
+    <string name="answer11">Бриллиантовая рука</string>
+    <string name="answer12">12 стульев</string>
+    <string name="question2">В каком фильме звучит знаменитая песня \"Александра\".?</string>
+    <string name="answer21">Зимняя вишня</string>
+    <string name="answer22">Москва слезам не верит</string>
+    <string name="question3">Кто исполнил главные роли в фильме \"Старики-разбойники\", где главные герои решают ограбить банк?</string>
+    <string name="answer31">Юрий Никулин и Евгений Евстигнеев</string>
+    <string name="answer32">Андрей Миронов и Армен Джигарханян</string>
+
+    <string name="textViewResult">Результат</string>
+    <string name="buttonNew">Начать заново</string>
+    <!-- Strings used for fragments for navigation -->
 </resources>
