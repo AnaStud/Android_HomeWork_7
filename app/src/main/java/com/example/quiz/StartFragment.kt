@@ -46,7 +46,7 @@ class StartFragment : Fragment() {
                 } else {
                     val dateOfBirth = dateFormat.format(calendar.time)
                     Snackbar.make(binding.buttonBirth,
-                        "Ваша дата рождения: $dateOfBirth, \nвозвращайтесь когда подрастёте ;-)",
+                        getString(R.string.snackbar_message, dateOfBirth),
                         Snackbar.LENGTH_LONG).show()
                 }
             }

@@ -20,4 +20,5 @@
     <string name="answer32">Андрей Миронов и Армен Джигарханян</string>
     <string name="textViewResult">Результат</string>
     <string name="buttonNew">Начать заново</string>
+    <string name="snackbar_message">Ваша дата рождения: %1$s,\nвозвращайтесь когда подрастёте ;-)</string>
 </resources>

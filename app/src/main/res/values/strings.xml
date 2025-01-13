@@ -19,4 +19,5 @@
     <string name="answer32">Andrey Mironov and Armen Dzhigarkhanyan</string>
     <string name="textViewResult">Result</string>
     <string name="buttonNew">Start again</string>
+    <string name="snackbar_message">Your date of birth: %1$s,\ncome back when you grow up ;-)</string>
 </resources>
