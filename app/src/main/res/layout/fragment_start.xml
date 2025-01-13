@@ -34,14 +34,25 @@
             android:contentDescription="@string/image_description" />
 
         <Button
+            android:id="@+id/buttonBirth"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/buttonBirthText"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
             android:id="@+id/buttonStart"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="@string/button_text"
-            app:layout_constraintTop_toBottomOf="@id/imageView"
+            android:text="@string/buttonStartText"
+            app:layout_constraintTop_toBottomOf="@id/buttonBirth"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:background="@drawable/button_background"/>
+            android:background="@drawable/button_background"
+            android:enabled="false" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

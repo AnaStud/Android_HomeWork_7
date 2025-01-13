@@ -30,24 +30,12 @@ class QuestionsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.linearLayoutQuestions.alpha = 0f
-
         binding.buttonBack.setOnClickListener {
             findNavController().navigate(R.id.action_QuestionsFragment_to_StartFragment)
         }
 
         binding.buttonFinish.setOnClickListener {
-            var testResult = 0
-            if (binding.radioGroupQuestion1.checkedRadioButtonId == binding.answer11.id) {
-                testResult += 1
-            }
-            if (binding.radioGroupQuestion2.checkedRadioButtonId == binding.answer22.id) {
-                testResult += 1
-            }
-            if (binding.radioGroupQuestion3.checkedRadioButtonId == binding.answer31.id) {
-                testResult += 1
-            }
-
-            val bundle = bundleOf(KEY_TEST_RESULT to testResult)
+            val bundle = setBundleTestResult()
 
             val navOptions = NavOptions.Builder()
                 .setEnterAnim(R.anim.pop_in)
@@ -65,6 +53,20 @@ class QuestionsFragment : Fragment() {
             alpha(1f)
             interpolator = AccelerateInterpolator()
         }.start()
+    }
+
+    private fun setBundleTestResult():Bundle {
+        var testResult = 0
+        if (binding.radioGroupQuestion1.checkedRadioButtonId == binding.answer11.id) {
+            testResult += 1
+        }
+        if (binding.radioGroupQuestion2.checkedRadioButtonId == binding.answer22.id) {
+            testResult += 1
+        }
+        if (binding.radioGroupQuestion3.checkedRadioButtonId == binding.answer31.id) {
+            testResult += 1
+        }
+        return bundleOf(KEY_TEST_RESULT to testResult)
     }
 
     override fun onDestroyView() {

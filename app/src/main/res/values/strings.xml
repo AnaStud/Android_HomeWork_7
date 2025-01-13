@@ -1,24 +1,22 @@
 <resources>
     <string name="app_name">FILM QUIZ</string>
-    <string name="button_text">Начать</string>
-    <string name="image_description">welcome</string>
-    <string name="welcome">Добро пожаловать в FILM QUIZ!</string>
-    <!-- Strings used for fragments for navigation -->
+    <string name="buttonStartText">Start</string>
+    <string name="buttonBirthText">To start enter your date of birth</string>
+    <string name="dateOfBirthTitle">Date of birth</string>
+    <string name="image_description">Welcome</string>
+    <string name="welcome">Welcome to FILM QUIZ!</string>
     <string name="empty">" "</string>
-    <string name="back">Назад</string>
-    <string name="finish">Отправить</string>
-
-    <string name="question1">Какой фильм стал культовым и известен своей фразой: \"Куй железо, не отходя от кассы!\"?</string>
-    <string name="answer11">Бриллиантовая рука</string>
-    <string name="answer12">12 стульев</string>
-    <string name="question2">В каком фильме звучит знаменитая песня \"Александра\".?</string>
-    <string name="answer21">Зимняя вишня</string>
-    <string name="answer22">Москва слезам не верит</string>
-    <string name="question3">Кто исполнил главные роли в фильме \"Старики-разбойники\", где главные герои решают ограбить банк?</string>
-    <string name="answer31">Юрий Никулин и Евгений Евстигнеев</string>
-    <string name="answer32">Андрей Миронов и Армен Джигарханян</string>
-
-    <string name="textViewResult">Результат</string>
-    <string name="buttonNew">Начать заново</string>
-    <!-- Strings used for fragments for navigation -->
+    <string name="back">Back</string>
+    <string name="finish">Send</string>
+    <string name="question1">Which movie has become a cult and is known for its phrase: \"Forge iron without leaving the box office!\"?</string>
+    <string name="answer11">The Diamond Hand</string>
+    <string name="answer12">12 chairs</string>
+    <string name="question2">In which movie is the famous song \"Alexandra\" played?</string>
+    <string name="answer21">Winter cherry</string>
+    <string name="answer22">Moscow does not believe in tears</string>
+    <string name="question3">Who played the main roles in the movie \"Old Robbers\", where the main characters decide to rob a bank?</string>
+    <string name="answer31">Yuri Nikulin and Evgeny Evstigneev</string>
+    <string name="answer32">Andrey Mironov and Armen Dzhigarkhanyan</string>
+    <string name="textViewResult">Result</string>
+    <string name="buttonNew">Start again</string>
 </resources>
